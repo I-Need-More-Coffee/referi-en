@@ -1,4 +1,4 @@
-# Resources for a Resource-Saving Internet
+# ♻️ Resources for a Resource-Saving Internet
 **An English translation of [korayer's RE;FERI](https://referi.de)**
 
 ---
@@ -37,7 +37,7 @@ You're reading this file right now.
 
 ### `posters`
 
-This folder contains the HTML and PDF files that are linked to in `index.html` as examples of how to use this grid system for designing posters
+This folder contains the HTML and PDF files that are linked to in `index.html` as examples of how to use this grid system for designing posters.
 
 ---
 
