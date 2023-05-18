@@ -11,6 +11,10 @@ To make this a better reference for myself, as well as for others that speak Eng
 
 The best way to learn more is to simply [check out the site](https://referi.ineedmore.coffee). Thank you for your interest in a free and resource-efficient web!
 
+## Changes from the Original
+
+This version of these resources has a few changes from the original. First of all, some elements, such as the posters, were removed to simplify the site and the translation effort. The most notable and visible change is the **addition of an automatic dark mode**. In 2023, people expect sites to have dark modes, and it's surprisingly easy to implement one with such basic HTML. All it takes is a single `meta` tag, and some mode-specific CSS for links and highlighting. Finally, there are a few structural changes to how all of the files are organized, mainly based on my own preferences.
+
 ## Using these Resources
 
 **In this folder you will find four files and one subfolder:**
