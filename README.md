@@ -57,4 +57,4 @@ This folder contains various images used on the site.
 
 - [x] Upload original German files
 - [x] Translate texts to English
-- [ ] Create a variant with automatic [dark mode](https://bt.ht/html-dark-mode/)
+- [x] Add automatic [dark mode](https://bt.ht/html-dark-mode/)
