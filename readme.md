@@ -49,11 +49,3 @@ Both of these files contain the CSS grid system that allows for more complex lay
 #### `template/info.md`
 
 This document contains information about using the template, largely a repeat of the section you're reading now.
-
----
-
-## Tasks
-
-- [x] Upload original German files
-- [x] Translate texts to English
-- [x] Add automatic [dark mode](https://bt.ht/html-dark-mode/)
