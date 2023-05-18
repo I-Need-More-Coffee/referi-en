@@ -16,10 +16,11 @@ The best way to learn more is to simply [check out the site](https://referi.inee
 **In this folder you will find four files and one subfolder:**
 
 1. `index.html`
-2. `grid.css`
-3. `grid-12.css`
-4. `README.md`
-5. `posters`
+2. `template.html`
+3. `grid.css`
+4. `grid-12.css`
+5. `README.md`
+6. `images`
 
 ### `index.html`
 
@@ -38,14 +39,6 @@ Both of these files contain the CSS grid system that allows for more complex lay
 ### `README.md`
 
 You're reading this file right now.
-
-### `poster1.html and poster2.html`
-
-The HTML files used to generate the posters linked to in `index.html`
-
-### `pdfs`
-
-This folder contains the PDF files that are linked to in `index.html` as examples of how to use this grid system for designing posters.
 
 ### `images`
 
