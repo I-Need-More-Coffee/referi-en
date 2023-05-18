@@ -4,12 +4,12 @@
 	<title>Resources for a Resource-Saving Internet</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
 	<link rel=icon href=data:,>
 	<link rel="stylesheet" href="grid.css">
 	<meta name="format-detection" content="telephone=no">
-	<meta name="description" content="Eine Initiative, um die Freiheit und Unabhängigkeit des Web’s zu stärken, indem zentralisierte und geschlossene Systeme infrage gestellt werden und die frühere Individualität des Webs gestärkt wird.">
+	<meta name="description" content="An initiative to strengthen the freedom and independence of the web by challenging centralized and closed systems and strengthening the former individuality of the web.">
 	<style>
-		hr {border: 1px solid rgba(0, 0, 0, 0.1);}
 		img{image-rendering:pixelated;image-rendering:crisp-edges;max-width:256px;}
 		body {font-family:sans-serif;line-height:1.375em}
 		h1,h2,h3 {line-height: 1em;letter-spacing:-.013em;}
@@ -17,11 +17,27 @@
 		sub{vertical-align:baseline;position:relative;top:0.3em}
 		.center{text-align:center}
 		.right{text-align:right}
-		.bar{background:black;height:1.375em}
-		.bar:hover{background:transparent;box-shadow:0 0 0 1px black}
-		.button {display: inline-block;padding: .7em .8em .6em;border: 0.1rem solid black;cursor: pointer;}
-		.button:hover {background: black;color: white;}
 		footer {margin-top: 2em;}
+		@supports (color-scheme: dark light) {
+			@media screen and (prefers-color-scheme: light) {
+				a:link {color: #111111;}
+        		a:visited {color: #111111;}
+        		a:hover {color: #333333}
+        		a:active {color: #999999;}
+				hr {border: 1px solid rgba(0, 0, 0, 0.1);}
+				.bar{background:black;height:1.375em}
+				.bar:hover{background:transparent;box-shadow:0 0 0 1px black}
+			}
+			@media screen and (prefers-color-scheme: dark) {
+				hr {border: 1px solid rgba(255, 255, 255, 0.1);}
+				.bar{background: white;height:1.375em}
+				.bar:hover{background:transparent;box-shadow:0 0 0 1px white}
+				a:link {color: #eeeeee;}
+        		a:visited {color: #eeeeee;}
+        		a:hover {color: #cccccc}
+        		a:active {color: #666666;}
+			}
+		}
 	</style>
 </head>
 <body>
@@ -52,19 +68,19 @@
 	<cell span=1 class="bar">span=1</cell>
 	<cell span=1 class="bar">span=1</cell>
 	<cell span=1 class="bar">span=1</cell>
-	<cell span=2 class="bar">span= 2 oder 1-2</cell>
+	<cell span=2 class="bar">span= 2 or 1-2</cell>
 	<cell span=4-6 class="bar">span=4-6</cell>
-	<cell span=2 class="bar">span=2 oder 7-8</cell>
+	<cell span=2 class="bar">span=2 or 7-8</cell>
 	<cell span=2-4 class="bar">span=2-4</cell>
 	<cell span=6-7 class="bar">span=6-7</cell>
-	<cell span=3 class="bar">span=3 oder 1-3</cell>
-	<cell span=2 class="bar">span=2 oder 4-5</cell>
-	<cell span=6-8 class="bar">span=3 oder 6-8</cell>
+	<cell span=3 class="bar">span=3 or 1-3</cell>
+	<cell span=2 class="bar">span=2 or 4-5</cell>
+	<cell span=6-8 class="bar">span=3 or 6-8</cell>
 	<cell span=2-3 class="bar">span=2-3</cell>
 	<cell span=5-8 class="bar">span=5-8</cell>
-	<cell span=8 class="right"><i>Move your mouse over the black fields!</i></cell>
+	<cell span=8 class="right"><i>Move your mouse over the bars!</i></cell>
 	<cell span=8><h3>Simple, Sustainable, and Sturdy</h3>The grid system is defined in a single, relatively small CSS file. It doesn't require any bloated JavaScript, and weighs in at a miniscule 1 kilobyte. It also scores a perfect 100/100 on Google Lighthouse <a href="lighthouse.pdf">[4]</a>.<p>With small modifications, this grid system can also be used to design posters, which can be exported to a PDF using the print function of major web browsers.</p>
-		<a href="raster-system.zip" style="color:#000"><div class="button">raster-system.zip (5 KB)</div></a><br><br>
+		<a href="raster-system.zip">Download raster-system.zip (5 KB)</a><br><br>
 	</cell>
 	<cell span=3>
 		<b>Instructions</b><br>The grid is divided into 8 columns (12 if using grid-12.css). Elements that should be in a column are tagged with <mark>&lt;cell&gt;</mark> with the <mark>span=</mark> defining the column's width.
@@ -78,8 +94,8 @@
 	<cell span=8>
 		<details>
 			<summary><b>Posters (2)</b></summary>
-			Poster 1 <a href="posters/poster1.pdf">[PDF, 23 KB]</a> <a href="posters/poster1.html">[HTML]</a><br>
-			Poster 2 <a href="posters/poster2.pdf">[PDF, 25 KB]</a> <a href="posters/poster2.html">[HTML]</a>
+			Poster 1 <a href="pdfs/poster1.pdf">[PDF, 23 KB]</a> <a href="poster1.html">[HTML]</a><br>
+			Poster 2 <a href="pdfs/poster2.pdf">[PDF, 25 KB]</a> <a href="poster2.html">[HTML]</a>
 		</details>
 	</cell>
 	<cell span=8>
@@ -153,6 +169,11 @@
 	</cell>
 	<cell span=6>There are also tools available to determine the CO<sub>2</sub> emissions of a given website, such as the Website Carbon Calculator <a href="https://www.websitecarbon.com/">[7]</a>, and Cabin's <i>How green is your website</i>.<a href="https://withcabin.com/inspect?url=referi.de">[8]</a>. 
 	</cell>
+	<cell span=2>
+		<b>Dark Mode</b>
+	</cell>
+	<cell span=6>Unlike the original German version, this site supports a dark mode. This is implemented in a rather simple manner <a href="https://bt.ht/html-dark-mode/">[9]</a>, with a single meta tag in the HTML telling the browser that the site supports a dark mode, and then a few lines in the CSS altering the colors of links depending on the mode, for aesthetic reasons. 
+	</cell>
 	<cell span=8>
 		<hr>
 	</cell>
@@ -161,12 +182,13 @@
 			<summary><b>Bibliography (8)</b></summary>
 			[1] <a href="https://www.verbraucherservice-bayern.de/presse/so-kommunizieren-sie-nachhaltig">https://www.verbraucherservice-bayern.de/presse/so-kommunizieren-sie-nachhaltig</a><br>
 			[2] <a href="https://httparchive.org/reports/page-weight">https://httparchive.org/reports/page-weight</a><br>
-	[3] <a href="https://github.com/amephraim/nlp/tree/master/texts">https://github.com/amephraim/nlp/tree/master/texts</a><br>
-	[4] <a href="lighthouse.pdf">lighthouse.pdf (283 KB)</a><br>
-	[5] <a href="https://css-tricks.com/the-difference-between-minification-and-gzipping/">https://css-tricks.com/the-difference-between-minification-and-gzipping/</a><br>
-	[6] <a href="https://solar.lowtechmagazine.com/2020/01/how-sustainable-is-a-solar-powered-website.html">https://solar.lowtechmagazine.com/2020/01/how-sustainable-is-a-solar-powered-website.html</a><br>
-	[7] <a href="https://www.websitecarbon.com/">https://www.websitecarbon.com/</a><br>
-	[8] <a href="https://withcabin.com/inspect?url=referi.de">https://withcabin.com/inspect?url=referi.de</a>
+			[3] <a href="https://github.com/amephraim/nlp/tree/master/texts">https://github.com/amephraim/nlp/tree/master/texts</a><br>
+			[4] <a href="lighthouse.pdf">lighthouse.pdf (283 KB)</a><br>
+			[5] <a href="https://css-tricks.com/the-difference-between-minification-and-gzipping/">https://css-tricks.com/the-difference-between-minification-and-gzipping/</a><br>
+			[6] <a href="https://solar.lowtechmagazine.com/2020/01/how-sustainable-is-a-solar-powered-website.html">https://solar.lowtechmagazine.com/2020/01/how-sustainable-is-a-solar-powered-website.html</a><br>
+			[7] <a href="https://www.websitecarbon.com/">https://www.websitecarbon.com/</a><br>
+			[8] <a href="https://withcabin.com/inspect?url=referi.ineedmore.coffee">https://withcabin.com/inspect?url=referi.de</a><br>
+			[9] <a href="https://bt.ht/html-dark-mode/">https://bt.ht/html-dark-mode/</a>
 		</details>
 	</cell>
 </body>

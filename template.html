@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 	<title>Template | Resources for a Resource Saving Internet</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
 	<link rel="stylesheet" href="grid.css">
-	<meta name="description" content="Eine Beschreibung deiner Webseite.">
+	<meta name="description" content="Your site's description">
 	<style type="text/css">
 		body {font-family:sans-serif;line-height:1.375em}
 		h1,h2,h3 {line-height: 1em;letter-spacing:-.013em;}
 		.center{text-align:center}
 		.right{text-align:right}
+		@supports (color-scheme: dark light) {
+			@media screen and (prefers-color-scheme: light) {
+				a:link {color: #111111;}
+				a:visited {color: #111111;}
+				a:hover {color: #333333}
+				a:active {color: #999999;}
+			}
+			@media screen and (prefers-color-scheme: dark) {
+				a:link {color: #eeeeee;}
+				a:visited {color: #eeeeee;}
+				a:hover {color: #cccccc}
+				a:active {color: #666666;}
+			}
+}
 	</style>
 </head>
 <body>

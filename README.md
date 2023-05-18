@@ -23,6 +23,10 @@ The best way to learn more is to simply [check out the site](https://referi.inee
 
 ### `index.html`
 
+This file powers the example site, with a variety of information on resource-efficient web design.
+
+### `template.html`
+
 This is the document you need to modify to create your own website. A few paragraphs have already been provided for reference. Open the file in a browser to preview it, or visit the live version [here](https://referi.ineedmore.coffee). If you don't know how to write HTML yet, Mozilla has a great resource on how to get started [here](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
 
 ### `grid.css` and `grid-12.css`
@@ -35,16 +39,22 @@ Both of these files contain the CSS grid system that allows for more complex lay
 
 You're reading this file right now.
 
-### `posters`
+### `poster1.html and poster2.html`
 
-This folder contains the HTML and PDF files that are linked to in `index.html` as examples of how to use this grid system for designing posters.
+The HTML files used to generate the posters linked to in `index.html`
+
+### `pdfs`
+
+This folder contains the PDF files that are linked to in `index.html` as examples of how to use this grid system for designing posters.
+
+### `images`
+
+This folder contains various images used on the site.
 
 ---
 
 ## Tasks
 
 - [x] Upload original German files
-- [ ] Translate texts to English
-- [ ] Translate the linked posters
-- [ ] Create PDF versions and upload them
+- [x] Translate texts to English
 - [ ] Create a variant with automatic [dark mode](https://bt.ht/html-dark-mode/)
