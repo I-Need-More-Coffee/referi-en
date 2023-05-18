@@ -17,12 +17,13 @@ This version of these resources has a few changes from the original. First of al
 
 ## Using these Resources
 
-**In this folder you will find four files and one subfolder:**
+**In this folder you will find three files and two subfolders:**
 
 1. `index.html`
 2. `readme.md`
-3. `images/`
-4. `template/`
+3. `CNAME`
+4. `images/`
+5. `template/`
 
 ### `index.html`
 
@@ -31,6 +32,10 @@ This file powers the example site, with a variety of information on resource-eff
 ### `readme.md`
 
 You're reading this file right now.
+
+### `CNAME`
+
+A GitHub-specific file that lets Pages know to host the example site at `referi.ineedmore.coffee`.
 
 ### `images`
 
