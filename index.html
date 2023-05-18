@@ -1,30 +1,173 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-	<title>RE; FERI, Demo</title>
+	<title>Resources for a Resource-Saving Internet</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=icon href=data:,>
 	<link rel="stylesheet" href="grid.css">
-	<meta name="description" content="Eine Beschreibung deiner Webseite.">
-	<style type="text/css">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Eine Initiative, um die Freiheit und Unabhängigkeit des Web’s zu stärken, indem zentralisierte und geschlossene Systeme infrage gestellt werden und die frühere Individualität des Webs gestärkt wird.">
+	<style>
+		hr {border: 1px solid rgba(0, 0, 0, 0.1);}
+		img{image-rendering:pixelated;image-rendering:crisp-edges;max-width:256px;}
 		body {font-family:sans-serif;line-height:1.375em}
 		h1,h2,h3 {line-height: 1em;letter-spacing:-.013em;}
+		h3 {line-height: 1.2em;}
+		sub{vertical-align:baseline;position:relative;top:0.3em}
 		.center{text-align:center}
 		.right{text-align:right}
+		.bar{background:black;height:1.375em}
+		.bar:hover{background:transparent;box-shadow:0 0 0 1px black}
+		.button {display: inline-block;padding: .7em .8em .6em;border: 0.1rem solid black;cursor: pointer;}
+		.button:hover {background: black;color: white;}
+		footer {margin-top: 2em;}
 	</style>
 </head>
 <body>
-	<cell span=5>
-		<h1>Anleitung zur Verwendung des RE; FERI Raster Systems.</h1>
+	<cell span=6>
+		<h1>Resources for a Resource-Saving Internet</h1>
+		<p>Every website emits CO<sub>2</sub>. Some sites even have the same environmental impact as a plastic bag <a href="https://www.verbraucherservice-bayern.de/presse/so-kommunizieren-sie-nachhaltig">[1]</a>. In the last 10 years, the average size of a mobile website has increased sixfold to 2.011 kilobytes <a href="https://httparchive.org/reports/page-weight">[2]</a> – more content than three Harry Potter books combined <a href="https://github.com/amephraim/nlp/tree/master/texts">[3]</a>.
+		</p>
+		<p>In an effort to counteract the consumerist status-quo of the World Wide Web, and lower the barriers to creating more sustainable websites, here are some <i>Resources for a Resource-Saving Internet</i>.
+		</p>
 	</cell>
-	<cell span=4>
-		<p>Dies ist ein Absatz, der 4 Spalten lang ist. Um die Länge zu ändern, muss der span=-Wert in der &lt;cell&gt; geändert werden.</p>
+	<cell span=8><hr></cell>
+	<cell span=8>
+		<h2>Grid System</h2>
 	</cell>
-	<cell span=3-6>
-		<p>Dieser Absatz beginnt in der 3. Spalte und geht bis zur 6. Spalte. Er ist also 4 Spalten lang. Zu diesem Zweck wurde der span= Wert in 3-6 geändert.</p>
+	<cell span=1 class="center">1</cell>
+	<cell span=1 class="center">2</cell>
+	<cell span=1 class="center">3</cell>
+	<cell span=1 class="center">4</cell>
+	<cell span=1 class="center">5</cell>
+	<cell span=1 class="center">6</cell>
+	<cell span=1 class="center">7</cell>
+	<cell span=1 class="center">8</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=1 class="bar">span=1</cell>
+	<cell span=2 class="bar">span= 2 oder 1-2</cell>
+	<cell span=4-6 class="bar">span=4-6</cell>
+	<cell span=2 class="bar">span=2 oder 7-8</cell>
+	<cell span=2-4 class="bar">span=2-4</cell>
+	<cell span=6-7 class="bar">span=6-7</cell>
+	<cell span=3 class="bar">span=3 oder 1-3</cell>
+	<cell span=2 class="bar">span=2 oder 4-5</cell>
+	<cell span=6-8 class="bar">span=3 oder 6-8</cell>
+	<cell span=2-3 class="bar">span=2-3</cell>
+	<cell span=5-8 class="bar">span=5-8</cell>
+	<cell span=8 class="right"><i>Move your mouse over the black fields!</i></cell>
+	<cell span=8><h3>Simple, Sustainable, and Sturdy</h3>The grid system is defined in a single, relatively small CSS file. It doesn't require any bloated JavaScript, and weighs in at a miniscule 1 kilobyte. It also scores a perfect 100/100 on Google Lighthouse <a href="lighthouse.pdf">[4]</a>.<p>With small modifications, this grid system can also be used to design posters, which can be exported to a PDF using the print function of major web browsers.</p>
+		<a href="raster-system.zip" style="color:#000"><div class="button">raster-system.zip (5 KB)</div></a><br><br>
 	</cell>
 	<cell span=3>
-		<p>Jetzt habe ich eine 3 Spalten lange Zeile erstellt. Da in der vorherigen Zeile nur noch 2 Spalten vorhanden waren, diese aber 3 Spalten lang ist, wurde sie automatisch in die nächste Zeile verschoben.</p>
+		<b>Instructions</b><br>The grid is divided into 8 columns (12 if using grid-12.css). Elements that should be in a column are tagged with <mark>&lt;cell&gt;</mark> with the <mark>span=</mark> defining the column's width.
+	</cell>
+	<cell span=3>
+		<b>For Example</b><br><mark>&lt;cell span=3&gt;</mark> creates a cell that is 3 columns wide. If there is no space for it in the current row, it shifts down to the next.
+	</cell>
+	<cell span=2><br>
+		<mark>&lt;cell span=5-8&gt;</mark> creates a cell starting in the 5th column and ending in the 8th column</p>
+	</cell>
+	<cell span=8>
+		<details>
+			<summary><b>Posters (2)</b></summary>
+			Poster 1 <a href="posters/poster1.pdf">[PDF, 23 KB]</a> <a href="posters/poster1.html">[HTML]</a><br>
+			Poster 2 <a href="posters/poster2.pdf">[PDF, 25 KB]</a> <a href="posters/poster2.html">[HTML]</a>
+		</details>
+	</cell>
+	<cell span=8>
+			<hr>
+	</cell>
+	<cell span=8>
+		<h2>Dithering</h2>Images play an important role in content presentation, making a page more attractive and more informative simultaneously. As demonstrated below, dithering can massively reduce filesizes, and you can choose how strongly to dither images depending on your use-case.
+	</cell>
+	<cell span=8><br></cell>
+	<cell span=2 style="background: black; border-radius: 50%;width: 80%;aspect-ratio: 1 / 1;"></cell>
+	<cell span=2>128 Color Dithering<br>67 KB<br>512px × 384px</cell>
+	<cell span=4 class="right"><img alt="Example image of a car's side profile" width=100%; style="border: 1px solid black" src="images/auto-0.png"></cell>
+	<cell span=8><br></cell>
+	<cell span=2 style="background: conic-gradient(black 0% 31%, #ddd 31% 100%); border-radius: 50%;width: 80%;aspect-ratio: 1 / 1"></cell>
+	<cell span=2>8 Shade Monochrome Dithering<br>21 KB<br>512px × 384px</cell>
+	<cell span=4 class="right"><img alt="Example image of a car's side profile" width=100%; style="border: 1px solid black" src="images/auto-1.png"></cell>
+	<cell span=8><br></cell>
+	<cell span=2 style="background: conic-gradient(black 0% 4%, #ddd 4% 100%); border-radius: 50%;width: 80%;aspect-ratio: 1 / 1"></cell>
+	<cell span=2>2 Shade Monochrome Dithering<br>3 KB<br>256px × 192px</cell>
+	<cell span=4 class="right"><img alt="Example image of a car's side profile" width=100%; style="border: 1px solid black" src="images/auto-2.png"></cell>
+	<cell span=8><br></cell>
+	<cell span=8>
+		<details>
+			<summary><b>Resources (5)</b></summary>
+			<a href="https://ditherit.com">ditherit.com</a> (dithering tool, online)<br>
+			<a href="https://tinypng.com/">tinypng.com</a> (komprimierungs tool, online)<br>
+			<a href="https://www.tinrocket.com/content/hyperdither/">inrocket.com</a> (dithering tool, macos)<br>
+			<a href="https://imageoptim.com/mac">imageoptim.com</a> (kompremierungs tool, macos)<br>
+
+			<a href="https://www.websiteplanet.com/webtools/imagecompressor/">websiteplanet.com</a> (kompremierungs tool, online)
+		</details>
+	</cell>
+	<cell span=8>
+			<hr>
+	</cell>
+	<cell span=8><h2>Webfonts</h2>
+		On average, 2% of a webpage's size is HTML, and another 4% is CSS. Loading custom fonts accounts for 8%. Yes, the font used to render text is 4 times bigger than the text itself.
+	</cell>
+	<cell span=5><h3>Sans-Serif,<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890
+</h3><h3 style="font-family: serif;">Serif,<br>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890
+</h3><br>Every computer comes with preinstalled fonts. These can be specified simply with <i>Serif</i> or <i>Sans-Serif</i>. Using default system fonts is a very easy way to save resources.
+	</cell>
+	<cell span=3>
+		<img alt="The letter A depicted in various fonts" width=100%; src="images/webfonts.png"><br>
+		<small>From top left to bottom right: Arial, Akzidenz Grotesk, Caslon, Times New Roman</small>
+	</cell>
+	<cell span=8>
+		<details>
+			<summary><b>Resources (1)</b></summary>
+			<a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">w3schools.com</a> (440 KB)<br>
+		</details>
+	</cell>
+	<cell span=8>
+			<hr>
+	</cell>
+	<cell span=8>
+		<h2>More Resources</h2>
+	</cell>
+	<cell span=2>
+		<b>JavaScript</b>
+	</cell>
+	<cell span=6>At 508 KB (around 30% of a site on average) JavaScript consumes the most resources, alongside images. By minifying JavaScript, removing superfluous characters, spaces, and comments, loading times can be improves significantly. Chris Coyier discusses minification in his article <a href="https://css-tricks.com/the-difference-between-minification-and-gzipping/">[5]</a> about using minification and gzipping to reduce site data usage by 86%.
+	</cell>
+	<cell span=2>
+		<b>Solar-Powered Hosting</b>
+	</cell>
+	<cell span=6>Choosing a hosting provider that runs it's data centers on sustainable energy is another good way to save resources. This article in LOW←TECH Magazine <a href="https://solar.lowtechmagazine.com/2020/01/how-sustainable-is-a-solar-powered-website.html">[6]</a> demonstrates some of the details behind the server they run themselves, that runs entirely on solar energy. This is particularly effective in warmer and sunnier countries.
+	</cell>
+	<cell span=2>
+		<b>Carbon Footprint Calculators</b>
+	</cell>
+	<cell span=6>There are also tools available to determine the CO<sub>2</sub> emissions of a given website, such as the Website Carbon Calculator <a href="https://www.websitecarbon.com/">[7]</a>, and Cabin's <i>How green is your website</i>.<a href="https://withcabin.com/inspect?url=referi.de">[8]</a>. 
+	</cell>
+	<cell span=8>
+		<hr>
+	</cell>
+	<cell span=8>
+		<details>
+			<summary><b>Bibliography (8)</b></summary>
+			[1] <a href="https://www.verbraucherservice-bayern.de/presse/so-kommunizieren-sie-nachhaltig">https://www.verbraucherservice-bayern.de/presse/so-kommunizieren-sie-nachhaltig</a><br>
+			[2] <a href="https://httparchive.org/reports/page-weight">https://httparchive.org/reports/page-weight</a><br>
+	[3] <a href="https://github.com/amephraim/nlp/tree/master/texts">https://github.com/amephraim/nlp/tree/master/texts</a><br>
+	[4] <a href="lighthouse.pdf">lighthouse.pdf (283 KB)</a><br>
+	[5] <a href="https://css-tricks.com/the-difference-between-minification-and-gzipping/">https://css-tricks.com/the-difference-between-minification-and-gzipping/</a><br>
+	[6] <a href="https://solar.lowtechmagazine.com/2020/01/how-sustainable-is-a-solar-powered-website.html">https://solar.lowtechmagazine.com/2020/01/how-sustainable-is-a-solar-powered-website.html</a><br>
+	[7] <a href="https://www.websitecarbon.com/">https://www.websitecarbon.com/</a><br>
+	[8] <a href="https://withcabin.com/inspect?url=referi.de">https://withcabin.com/inspect?url=referi.de</a>
+		</details>
 	</cell>
 </body>
 
